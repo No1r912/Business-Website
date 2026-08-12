@@ -1,0 +1,60 @@
+/* ============================================
+   Zyphera Digital — Glass System
+   Light Blue Glassmorphism
+   ============================================ */
+
+
+/* =========================
+   Glass Card
+   ========================= */
+
+.glass-card {
+    background: var(--glass-bg);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid var(--glass-border);
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--glass-shadow);
+
+    position: relative;
+
+    overflow: hidden;
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        border-color var(--transition);
+}
+
+
+/* =========================
+   Glass Hover
+   ========================= */
+
+.glass-card:hover {
+    border-color: var(--glass-border-strong);
+
+    box-shadow: var(--shadow-medium);
+}
+
+
+/* =========================
+   Strong Glass
+   ========================= */
+
+.glass-card.strong {
+    background: var(--glass-bg-strong);
+}
+
+
+/* =========================
+   Blue Glass
+   ========================= */
+
+.glass-card.blue {
+    background: var(--glass-bg-blue);
+}

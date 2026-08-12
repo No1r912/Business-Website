@@ -1,0 +1,29 @@
+/* Core */
+@import url("./variables.css");
+@import url("./reset.css");
+
+/* Background */
+@import url("./background.css");
+
+/* Glass */
+@import url("./glass.css");
+
+/* Components */
+@import url("./navbar.css");
+@import url("./buttons.css");
+
+/* Sections */
+@import url("./hero.css");
+@import url("./sections.css");
+@import url("./about.css");
+@import url("./services.css");
+@import url("./projects.css");
+@import url("./technology.css");
+@import url("./contact.css");
+@import url("./footer.css");
+
+/* Effects */
+@import url("./animations.css");
+
+/* Responsive */
+@import url("./responsive.css");

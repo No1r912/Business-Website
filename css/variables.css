@@ -1,0 +1,138 @@
+/* ============================================
+   Zyphera Digital — Design Variables
+   Full Light Blue Theme
+   ============================================ */
+
+:root {
+
+    /* =========================
+       Background
+       ========================= */
+
+    --bg: #EAF8FF;
+    --bg-light: #DDF4FF;
+    --bg-lighter: #F3FBFF;
+    --bg-deep: #C8EDFF;
+
+
+    /* =========================
+       Brand Colors
+       ========================= */
+
+    --primary: #0EA5E9;
+    --bright: #38BDF8;
+    --deep: #0284C7;
+    --dark-blue: #0369A1;
+
+
+    /* =========================
+       Text
+       ========================= */
+
+    --text-dark: #082F49;
+    --text-secondary: #3B647A;
+    --text-muted: #64879A;
+    --text-light: #F0FAFF;
+
+
+    /* =========================
+       Glass
+       ========================= */
+
+    --glass-bg: rgba(255, 255, 255, 0.48);
+
+    --glass-bg-strong:
+        rgba(255, 255, 255, 0.68);
+
+    --glass-border:
+        rgba(125, 211, 252, 0.45);
+
+    --glass-border-strong:
+        rgba(56, 189, 248, 0.65);
+
+
+    /* =========================
+       Shadows
+       ========================= */
+
+    --glass-shadow:
+        0 8px 32px
+        rgba(14, 165, 233, 0.10);
+
+    --shadow-soft:
+        0 4px 20px
+        rgba(14, 165, 233, 0.08);
+
+    --shadow-medium:
+        0 10px 40px
+        rgba(14, 165, 233, 0.14);
+
+
+    /* =========================
+       Glow
+       ========================= */
+
+    --glow:
+        0 0 40px
+        rgba(14, 165, 233, 0.18);
+
+    --glow-strong:
+        0 0 60px
+        rgba(56, 189, 248, 0.30);
+
+
+    /* =========================
+       Borders
+       ========================= */
+
+    --border-light:
+        rgba(125, 211, 252, 0.35);
+
+    --border-medium:
+        rgba(14, 165, 233, 0.25);
+
+
+    /* =========================
+       Status Colors
+       ========================= */
+
+    --success: #0284C7;
+    --warning: #D97706;
+    --danger: #DC2626;
+
+
+    /* =========================
+       Radius
+       ========================= */
+
+    --radius-sm: 12px;
+    --radius: 20px;
+    --radius-lg: 28px;
+    --radius-full: 999px;
+
+
+    /* =========================
+       Animation
+       ========================= */
+
+    --transition:
+        0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    /* =========================
+       Typography
+       ========================= */
+
+    --font:
+        'Inter',
+        -apple-system,
+        BlinkMacSystemFont,
+        sans-serif;
+
+
+    /* =========================
+       Navigation
+       ========================= */
+
+    --nav-height: 72px;
+}

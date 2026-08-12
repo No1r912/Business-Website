@@ -1,0 +1,143 @@
+/* ============================================
+   Zyphera Digital — Buttons
+   Light Blue / Cyan Theme
+   ============================================ */
+
+
+/* =========================
+   Base Button
+   ========================= */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 12px 28px;
+
+    font-family: var(--font);
+    font-size: 0.875rem;
+    font-weight: 600;
+
+    border-radius: var(--radius-sm);
+    border: none;
+
+    cursor: pointer;
+
+    transition: var(--transition);
+
+    white-space: nowrap;
+}
+
+
+/* =========================
+   Primary Button
+   ========================= */
+
+.btn-primary {
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary),
+            var(--deep)
+        );
+
+    color: white;
+
+    box-shadow:
+        0 4px 16px rgba(6, 182, 212, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 28px rgba(6, 182, 212, 0.4);
+}
+
+
+/* =========================
+   Secondary Button
+   ========================= */
+
+.btn-secondary {
+    background: var(--glass-bg);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    color: var(--text-dark);
+
+    border: 1px solid var(--glass-border);
+}
+
+.btn-secondary:hover {
+    border-color: var(--primary);
+
+    box-shadow: var(--glow);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   Navbar Button
+   ========================= */
+
+.btn-nav {
+    padding: 10px 24px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary),
+            var(--deep)
+        );
+
+    color: white;
+
+    border-radius: var(--radius-sm);
+
+    font-size: 0.8125rem;
+    font-weight: 600;
+
+    box-shadow:
+        0 2px 12px rgba(6, 182, 212, 0.25);
+
+    transition: var(--transition);
+}
+
+.btn-nav:hover {
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 4px 20px rgba(6, 182, 212, 0.35);
+}
+
+
+/* =========================
+   Large Button
+   ========================= */
+
+.btn-large {
+    padding: 16px 36px;
+
+    font-size: 1rem;
+
+    border-radius: var(--radius-sm);
+}
+
+
+/* =========================
+   Submit Button
+   ========================= */
+
+.btn-submit {
+    width: 100%;
+
+    padding: 14px;
+
+    font-size: 0.9375rem;
+}

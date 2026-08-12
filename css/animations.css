@@ -1,0 +1,47 @@
+/* ============================================
+   Zyphera Digital — Animations
+   Light Blue / Cyan Theme
+   ============================================ */
+
+
+/* =========================
+   Fade In
+   ========================= */
+
+.fade-in {
+    opacity: 0;
+
+    transform: translateY(24px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+
+/* =========================
+   Fade In Active
+   ========================= */
+
+.fade-in.visible {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================
+   Animation Delays
+   ========================= */
+
+.delay-1 {
+    transition-delay: 0.1s;
+}
+
+.delay-2 {
+    transition-delay: 0.2s;
+}
+
+.delay-3 {
+    transition-delay: 0.3s;
+}

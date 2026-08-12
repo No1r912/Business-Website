@@ -1,0 +1,97 @@
+/* ============================================
+   Zyphera Digital — Technology Stack
+   Light Blue / Cyan Theme
+   ============================================ */
+
+
+/* =========================
+   Technology Section
+   ========================= */
+
+.tech {
+    position: relative;
+
+    z-index: 1;
+
+    background:
+        linear-gradient(
+            180deg,
+            var(--bg) 0%,
+            var(--bg-light) 100%
+        );
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   Technology Cloud
+   ========================= */
+
+.tech-cloud {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    max-width: 800px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================
+   Technology Pill
+   ========================= */
+
+.tech-pill {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 10px 22px;
+
+    font-size: 0.8125rem;
+
+    font-weight: 500;
+
+    color: var(--text-dark);
+
+    background: var(--glass-bg);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border:
+        1px solid
+        var(--glass-border);
+
+    border-radius: var(--radius-full);
+
+    box-shadow:
+        0 2px 12px
+        rgba(6, 182, 212, 0.06);
+
+    transition: var(--transition);
+
+    cursor: default;
+}
+
+
+/* =========================
+   Technology Pill Hover
+   ========================= */
+
+.tech-pill:hover {
+    border-color:
+        rgba(34, 211, 238, 0.5);
+
+    box-shadow: var(--glow);
+
+    transform: translateY(-2px);
+
+    color: var(--primary);
+}

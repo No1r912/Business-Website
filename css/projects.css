@@ -1,0 +1,270 @@
+/* ============================================
+   Zyphera Digital — Projects
+   Light Blue / Cyan Theme
+   ============================================ */
+
+
+/* =========================
+   Projects Section
+   ========================= */
+
+.projects {
+    position: relative;
+
+    z-index: 1;
+}
+
+
+/* =========================
+   Projects Grid
+   ========================= */
+
+.projects-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 24px;
+}
+
+
+/* =========================
+   Project Panel
+   ========================= */
+
+.project-panel {
+    padding: 28px 32px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    transition: var(--transition);
+}
+
+
+/* Left Accent */
+
+.project-panel::after {
+    content: '';
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 3px;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            to bottom,
+            var(--primary),
+            var(--bright)
+        );
+
+    opacity: 0;
+
+    transition: opacity var(--transition);
+
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* Project Hover */
+
+.project-panel:hover {
+    transform: translateY(-4px);
+
+    border-color:
+        rgba(34, 211, 238, 0.4);
+
+    box-shadow: var(--glow);
+}
+
+.project-panel:hover::after {
+    opacity: 1;
+}
+
+
+/* =========================
+   Panel Header
+   ========================= */
+
+.panel-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 16px;
+}
+
+
+/* =========================
+   Project Status
+   ========================= */
+
+.panel-status {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    font-size: 0.6875rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+
+    padding: 4px 10px;
+
+    border-radius: var(--radius-full);
+}
+
+
+/* Active */
+
+.active-status {
+    color: var(--primary);
+
+    background:
+        rgba(6, 182, 212, 0.08);
+}
+
+
+/* Completed */
+
+.completed-status {
+    color: var(--deep);
+
+    background:
+        rgba(8, 145, 178, 0.08);
+}
+
+
+/* In Development */
+
+.dev-status {
+    color: #D97706;
+
+    background:
+        rgba(217, 119, 6, 0.08);
+}
+
+
+/* =========================
+   Project ID
+   ========================= */
+
+.panel-id {
+    font-size: 0.625rem;
+
+    font-weight: 600;
+
+    letter-spacing: 0.12em;
+
+    color: var(--text-secondary);
+
+    opacity: 0.6;
+}
+
+
+/* =========================
+   Project Title
+   ========================= */
+
+.panel-title {
+    font-size: 1.125rem;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   Project Metadata
+   ========================= */
+
+.panel-meta {
+    margin-bottom: 20px;
+}
+
+.meta-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 8px 0;
+
+    border-bottom:
+        1px solid
+        rgba(6, 182, 212, 0.06);
+}
+
+.meta-row:last-child {
+    border-bottom: none;
+}
+
+
+/* Metadata Label */
+
+.meta-label {
+    font-size: 0.6875rem;
+
+    font-weight: 600;
+
+    letter-spacing: 0.1em;
+
+    color: var(--text-secondary);
+}
+
+
+/* Metadata Value */
+
+.meta-value {
+    font-size: 0.75rem;
+
+    font-weight: 600;
+
+    letter-spacing: 0.05em;
+
+    color: var(--text-dark);
+}
+
+
+/* =========================
+   Project Link
+   ========================= */
+
+.panel-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 0.8125rem;
+
+    font-weight: 600;
+
+    color: var(--primary);
+
+    transition: var(--transition);
+}
+
+
+/* Arrow */
+
+.panel-link .arrow {
+    transition: transform var(--transition);
+}
+
+
+/* Arrow Hover */
+
+.project-panel:hover .panel-link .arrow {
+    transform: translateX(4px);
+}

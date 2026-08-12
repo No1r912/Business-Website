@@ -1,0 +1,230 @@
+/* ============================================
+   Zyphera Digital — About Section
+   Light Blue / Cyan Theme
+   ============================================ */
+
+
+/* =========================
+   About Section
+   ========================= */
+
+.about {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================
+   About Layout
+   ========================= */
+
+.about-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 64px;
+
+    align-items: start;
+}
+
+
+/* =========================
+   Studio Card
+   ========================= */
+
+.studio-card {
+    padding: 32px;
+
+    margin-bottom: 32px;
+}
+
+
+/* =========================
+   Studio Label
+   ========================= */
+
+.studio-label {
+    display: block;
+
+    font-size: 0.6875rem;
+    font-weight: 700;
+
+    letter-spacing: 0.15em;
+
+    color: var(--primary);
+
+    margin-bottom: 24px;
+}
+
+
+/* =========================
+   Studio Items
+   ========================= */
+
+.studio-items {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+.studio-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    font-size: 0.875rem;
+    font-weight: 500;
+
+    color: var(--text-dark);
+}
+
+
+/* =========================
+   Studio Icon
+   ========================= */
+
+.studio-icon {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(6, 182, 212, 0.08);
+
+    border-radius: var(--radius-sm);
+
+    color: var(--primary);
+
+    flex-shrink: 0;
+}
+
+.studio-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* =========================
+   Timeline
+   ========================= */
+
+.timeline {
+    position: relative;
+
+    padding-left: 32px;
+}
+
+
+/* Timeline Line */
+
+.timeline::before {
+    content: '';
+
+    position: absolute;
+
+    left: 7px;
+
+    top: 8px;
+    bottom: 8px;
+
+    width: 2px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            var(--primary),
+            rgba(6, 182, 212, 0.1)
+        );
+
+    border-radius: 1px;
+}
+
+
+/* =========================
+   Timeline Item
+   ========================= */
+
+.timeline-item {
+    position: relative;
+
+    padding-bottom: 28px;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+
+/* =========================
+   Timeline Dot
+   ========================= */
+
+.timeline-dot {
+    position: absolute;
+
+    left: -32px;
+
+    top: 6px;
+
+    width: 16px;
+    height: 16px;
+
+    border-radius: 50%;
+
+    background: var(--bg);
+
+    border:
+        2px solid
+        rgba(6, 182, 212, 0.3);
+
+    transition: var(--transition);
+}
+
+
+/* Active Timeline Dot */
+
+.timeline-dot.active {
+    background: var(--primary);
+
+    border-color: var(--primary);
+
+    box-shadow:
+        0 0 12px
+        rgba(6, 182, 212, 0.4);
+}
+
+
+/* =========================
+   Timeline Year
+   ========================= */
+
+.timeline-year {
+    display: block;
+
+    font-size: 0.875rem;
+
+    font-weight: 700;
+
+    color: var(--text-dark);
+
+    margin-bottom: 2px;
+}
+
+
+/* =========================
+   Timeline Description
+   ========================= */
+
+.timeline-desc {
+    font-size: 0.8125rem;
+
+    color: var(--text-secondary);
+}
