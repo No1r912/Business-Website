@@ -1,182 +1,169 @@
-/* ============================================
-   Zyphera Digital — Contact
-   Light Blue / Cyan Theme
-   ============================================ */
-
-
-/* =========================
-   Contact Section
-   ========================= */
+/* ========================================= */
+/* CONTACT */
+/* ========================================= */
 
 .contact {
-    position: relative;
-
-    z-index: 1;
+  position: relative;
 }
-
-
-/* =========================
-   Contact Header
-   ========================= */
 
 .contact-header {
-    text-align: center;
-
-    margin-bottom: 48px;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
 }
 
-.contact-header .section-title {
-    margin-bottom: 8px;
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.contact-header .section-subtitle {
-    margin: 0 auto 32px;
-
-    font-size: 1.125rem;
+.contact-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 26px;
+  text-decoration: none;
+  color: inherit;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+  overflow: hidden;
 }
 
-
-/* =========================
-   Contact Form
-   ========================= */
-
-.contact-form {
-    max-width: 640px;
-
-    margin: 0 auto;
-
-    padding: 40px;
+.contact-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(34, 211, 238, 0.08),
+    transparent 55%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-
-/* =========================
-   Form Row
-   ========================= */
-
-.form-row {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 20px;
+.contact-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(34, 211, 238, 0.45);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
 }
 
-
-/* =========================
-   Form Group
-   ========================= */
-
-.form-group {
-    margin-bottom: 20px;
+.contact-card:hover::before {
+  opacity: 1;
 }
 
+.contact-icon {
+  position: relative;
+  z-index: 1;
 
-/* =========================
-   Form Labels
-   ========================= */
+  width: 58px;
+  height: 58px;
 
-.form-group label {
-    display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    font-size: 0.8125rem;
+  flex-shrink: 0;
 
-    font-weight: 600;
+  border: 1px solid rgba(34, 211, 238, 0.25);
+  border-radius: 14px;
 
-    color: var(--text-dark);
+  color: #22d3ee;
 
-    margin-bottom: 8px;
-
-    letter-spacing: 0.02em;
+  background: rgba(34, 211, 238, 0.06);
 }
 
-
-/* =========================
-   Form Controls
-   ========================= */
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-    width: 100%;
-
-    padding: 12px 16px;
-
-    font-family: var(--font);
-
-    font-size: 0.9375rem;
-
-    color: var(--text-dark);
-
-    background:
-        rgba(255, 255, 255, 0.5);
-
-    border:
-        1px solid
-        rgba(6, 182, 212, 0.12);
-
-    border-radius: var(--radius-sm);
-
-    transition: var(--transition);
-
-    outline: none;
+.contact-icon svg {
+  width: 27px;
+  height: 27px;
 }
 
-
-/* =========================
-   Placeholder
-   ========================= */
-
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-    color: var(--text-secondary);
-
-    opacity: 0.6;
+.contact-text-icon {
+  font-size: 22px;
+  font-weight: 700;
 }
 
+.contact-content {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+}
 
-/* =========================
-   Focus State
-   ========================= */
+.contact-label {
+  display: block;
+  margin-bottom: 5px;
 
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-    border-color: var(--primary);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
 
-    box-shadow:
-        0 0 0 3px
-        rgba(6, 182, 212, 0.1);
+  color: #22d3ee;
+}
 
-    background:
-        rgba(255, 255, 255, 0.8);
+.contact-content h3 {
+  margin: 0 0 5px;
+
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.contact-content p {
+  margin: 0;
+
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.contact-arrow {
+  position: relative;
+  z-index: 1;
+
+  font-size: 22px;
+  color: #22d3ee;
+
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover .contact-arrow {
+  transform: translateX(5px);
 }
 
 
-/* =========================
-   Select
-   ========================= */
+/* ========================================= */
+/* CONTACT RESPONSIVE */
+/* ========================================= */
 
-.form-group select {
-    appearance: none;
+@media (max-width: 768px) {
 
-    background-image:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23475569' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
 
-    background-repeat: no-repeat;
+  .contact-card {
+    padding: 22px;
+  }
 
-    background-position:
-        right 16px center;
-
-    cursor: pointer;
 }
 
+@media (max-width: 480px) {
 
-/* =========================
-   Textarea
-   ========================= */
+  .contact-icon {
+    width: 50px;
+    height: 50px;
+  }
 
-.form-group textarea {
-    resize: vertical;
+  .contact-content h3 {
+    font-size: 16px;
+  }
 
-    min-height: 120px;
+  .contact-content p {
+    font-size: 12px;
+  }
+
 }
