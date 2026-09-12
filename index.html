@@ -12,6 +12,8 @@
 </head>
 <body>
 
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+
   <!-- Background Elements -->
   <div class="bg-elements" aria-hidden="true">
     <div class="orb orb-1"></div>
@@ -80,6 +82,10 @@
             <a href="#services" class="btn btn-primary">Explore Services</a>
             <a href="#projects" class="btn btn-secondary">Our Work</a>
           </div>
+          <div class="hero-proof" aria-label="Zyphera capabilities">
+            <span><b>01</b> Human-first support</span>
+            <span><b>02</b> Secure by design</span>
+          </div>
         </div>
         <div class="hero-dashboard fade-in delay-1">
           <div class="dashboard glass-card">
@@ -91,6 +97,12 @@
               </span>
             </div>
             <div class="dashboard-divider"></div>
+            <div class="dashboard-metrics" aria-label="Live system metrics">
+              <div class="metric"><span>UPTIME</span><strong id="uptimeMetric">99.98%</strong></div>
+              <div class="metric"><span>RESPONSE</span><strong id="responseMetric">28 ms</strong></div>
+              <div class="metric"><span>STATUS</span><strong class="metric-live">LIVE</strong></div>
+            </div>
+            <div class="signal-graph" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
             <div class="dashboard-services">
               <div class="dashboard-row">
                 <span class="service-name">IT SUPPORT</span>

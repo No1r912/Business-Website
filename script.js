@@ -13,6 +13,15 @@
   window.addEventListener('scroll', handleScroll, { passive: true });
   handleScroll();
 
+  // ── Reading progress ──
+  const scrollProgress = document.getElementById('scrollProgress');
+  function updateProgress() {
+    const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+    scrollProgress.style.width = (scrollable ? (window.scrollY / scrollable) * 100 : 0) + '%';
+  }
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  updateProgress();
+
   // ── Mobile menu ──
   const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobileMenu');
@@ -119,7 +128,7 @@
   // ── Contact form ──
   const contactForm = document.getElementById('contact-form');
 
-  contactForm.addEventListener('submit', function (e) {
+  if (contactForm) contactForm.addEventListener('submit', function (e) {
     e.preventDefault();
 
     const btn = contactForm.querySelector('.btn-submit');
@@ -135,6 +144,27 @@
       contactForm.reset();
     }, 3000);
   });
+
+  // ── A quiet live signal makes the hero console feel operational ──
+  const responseMetric = document.getElementById('responseMetric');
+  if (responseMetric && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    setInterval(function () {
+      responseMetric.textContent = (22 + Math.floor(Math.random() * 15)) + ' ms';
+    }, 2600);
+  }
+
+  // ── Gentle depth for cards on pointer devices ──
+  if (window.matchMedia('(pointer: fine)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.service-card, .project-panel, .contact-card').forEach(function (card) {
+      card.addEventListener('pointermove', function (event) {
+        const bounds = card.getBoundingClientRect();
+        const x = (event.clientX - bounds.left) / bounds.width - .5;
+        const y = (event.clientY - bounds.top) / bounds.height - .5;
+        card.style.transform = 'perspective(700px) rotateX(' + (-y * 3) + 'deg) rotateY(' + (x * 3) + 'deg) translateY(-5px)';
+      });
+      card.addEventListener('pointerleave', function () { card.style.transform = ''; });
+    });
+  }
 
   // ── Smooth scroll for anchor links ──
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
