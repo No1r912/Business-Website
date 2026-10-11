@@ -1,21 +1,21 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Zyphera Digital — Independent digital technology studio providing IT support, web development, networking, and cybersecurity solutions.">
-  <title>Zyphera Digital — Digital Technology & Solutions</title>
+  <meta name="description" content="Zyphera Digital provides professional web development, IT troubleshooting, Python scripting, and Linux support for businesses and individuals.">
+  <meta property="og:title" content="Zyphera Digital | Practical Technology Solutions">
+  <meta property="og:description" content="Professional digital services for websites, everyday computer support, Python scripting, and Linux assistance.">
+  <meta property="og:type" content="website">
+  <title>Zyphera Digital | Practical Technology Solutions</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-
+</head><body>
   <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
-
-  <!-- Background Elements -->
-  <div class="bg-elements" aria-hidden="true">
+<div class="bg-elements" aria-hidden="true">
     <div class="orb orb-1"></div>
     <div class="orb orb-2"></div>
     <div class="orb orb-3"></div>
@@ -27,9 +27,9 @@
         <path d="M200 0 V400 M600 100 V600 M1000 0 V500 M1200 200 V900" stroke="url(#circuitGrad)" stroke-width="1" fill="none" opacity="0.15"/>
         <defs>
           <linearGradient id="circuitGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stop-color="#06B6D4" stop-opacity="0"/>
-            <stop offset="50%" stop-color="#22D3EE" stop-opacity="0.6"/>
-            <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+            <stop offset="0%" stop-color="#42C7D9" stop-opacity="0"/>
+            <stop offset="50%" stop-color="#42C7D9" stop-opacity="0.7"/>
+            <stop offset="100%" stop-color="#42C7D9" stop-opacity="0"/>
           </linearGradient>
         </defs>
       </svg>
@@ -37,18 +37,25 @@
     <div class="particles" id="particles"></div>
   </div>
 
-  <!-- Navigation -->
   <header class="navbar" id="navbar">
     <div class="container nav-container">
-      <a href="#home" class="logo">ZYPHERA</a>
-      <nav class="nav-links" id="navLinks">
+      <a href="#home" class="logo" aria-label="Zyphera Digital home">
+        <span class="logo-mark">
+          <span></span>
+        </span>
+        <span>ZYPHERA DIGITAL</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
         <a href="#home" class="nav-link active">Home</a>
-        <a href="#about" class="nav-link">About</a>
         <a href="#services" class="nav-link">Services</a>
-        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#projects" class="nav-link">Our Work</a>
+        <a href="#about" class="nav-link">About</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
-      <a href="#contact" class="btn btn-nav">Get Started</a>
+
+      <a href="#contact" class="btn btn-nav">Request an Enquiry</a>
+
       <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
         <span></span>
         <span></span>
@@ -57,154 +64,77 @@
     </div>
   </header>
 
-  <!-- Mobile Menu -->
   <div class="mobile-menu" id="mobileMenu">
-    <nav class="mobile-nav">
+    <nav class="mobile-nav" aria-label="Mobile navigation">
       <a href="#home" class="mobile-nav-link">Home</a>
-      <a href="#about" class="mobile-nav-link">About</a>
       <a href="#services" class="mobile-nav-link">Services</a>
-      <a href="#projects" class="mobile-nav-link">Projects</a>
+      <a href="#projects" class="mobile-nav-link">Our Work</a>
+      <a href="#about" class="mobile-nav-link">About</a>
       <a href="#contact" class="mobile-nav-link">Contact</a>
-      <a href="#contact" class="btn btn-primary mobile-cta">Get Started</a>
+      <a href="#contact" class="btn btn-primary mobile-cta">Request an Enquiry</a>
     </nav>
   </div>
 
   <main>
-
-    <!-- Hero -->
     <section class="hero section" id="home">
       <div class="container hero-container">
         <div class="hero-content fade-in">
-          <span class="hero-brand">ZYPHERA DIGITAL</span>
-          <h1 class="hero-title">Digital Technology<br>&amp; Solutions</h1>
-          <p class="hero-subtitle">Building smarter digital experiences through technology, design and security.</p>
-          <div class="hero-actions">
-            <a href="#services" class="btn btn-primary">Explore Services</a>
-            <a href="#projects" class="btn btn-secondary">Our Work</a>
+          <span class="hero-brand">DIGITAL & IT SERVICES</span>
+          <h1 class="hero-title">Practical Technology.<br>Professional Solutions.</h1>
+          <p class="hero-subtitle">Zyphera Digital provides practical web development, software scripting, and IT support to help businesses establish their online presence and address everyday technical challenges.</p>          <div class="hero-actions">
+            <a href="#services" class="btn btn-primary">Explore Our Services</a>
+            <a href="#contact" class="btn btn-secondary">Discuss a Project</a>
           </div>
-          <div class="hero-proof" aria-label="Zyphera capabilities">
-            <span><b>01</b> Human-first support</span>
-            <span><b>02</b> Secure by design</span>
-          </div>
+<p class="hero-meta">Web Development · IT Support · Python · Linux</p>
         </div>
-        <div class="hero-dashboard fade-in delay-1">
-          <div class="dashboard glass-card">
-            <div class="dashboard-header">
-              <span class="dashboard-label">ZYPHERA / SYSTEM</span>
-              <span class="status-indicator">
-                <span class="status-dot pulse"></span>
-                ONLINE
-              </span>
-            </div>
-            <div class="dashboard-divider"></div>
-            <div class="dashboard-metrics" aria-label="Live system metrics">
-              <div class="metric"><span>UPTIME</span><strong id="uptimeMetric">99.98%</strong></div>
-              <div class="metric"><span>RESPONSE</span><strong id="responseMetric">28 ms</strong></div>
-              <div class="metric"><span>STATUS</span><strong class="metric-live">LIVE</strong></div>
-            </div>
-            <div class="signal-graph" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-            <div class="dashboard-services">
-              <div class="dashboard-row">
-                <span class="service-name">IT SUPPORT</span>
-                <span class="service-status available">
-                  <span class="status-dot pulse"></span> AVAILABLE
-                </span>
-              </div>
-              <div class="dashboard-row">
-                <span class="service-name">WEB DEVELOPMENT</span>
-                <span class="service-status available">
-                  <span class="status-dot pulse"></span> AVAILABLE
-                </span>
-              </div>
-              <div class="dashboard-row">
-                <span class="service-name">NETWORKING</span>
-                <span class="service-status available">
-                  <span class="status-dot pulse"></span> AVAILABLE
-                </span>
-              </div>
-              <div class="dashboard-row">
-                <span class="service-name">SECURITY</span>
-                <span class="service-status available">
-                  <span class="status-dot pulse"></span> AVAILABLE
-                </span>
-              </div>
-            </div>
-            <div class="dashboard-footer">
-              <span class="dashboard-meta">SYS v2.4.1</span>
-              <span class="dashboard-meta">ALL SYSTEMS NOMINAL</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- About -->
-    <section class="about section" id="about">
-      <div class="container">
-        <div class="about-grid">
-          <div class="about-content fade-in">
-            <span class="section-label">About</span>
-            <h2 class="section-title">Technology Built With Purpose.</h2>
-            <p class="section-text">Zyphera Digital focuses on practical technology solutions across IT support, web development, networking and cybersecurity. The goal is to create reliable, modern and useful digital experiences.</p>
-            <p class="section-text">As an independent technology studio, we combine technical expertise with thoughtful design to deliver solutions that work in the real world — not just on paper.</p>
-          </div>
-          <div class="about-visual fade-in delay-1">
-            <div class="studio-card glass-card">
-              <span class="studio-label">INDEPENDENT TECHNOLOGY STUDIO</span>
-              <div class="studio-items">
-                <div class="studio-item">
-                  <div class="studio-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-                  </div>
-                  <span>IT Solutions</span>
-                </div>
-                <div class="studio-item">
-                  <div class="studio-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-                  </div>
-                  <span>Digital Development</span>
-                </div>
-                <div class="studio-item">
-                  <div class="studio-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
-                  </div>
-                  <span>Networking</span>
-                </div>
-                <div class="studio-item">
-                  <div class="studio-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                  </div>
-                  <span>Security</span>
-                </div>
-              </div>
+        <div class="hero-visual fade-in delay-1" aria-label="Corporate service overview">
+          <div class="browser-mockup">
+            <div class="browser-bar">
+              <span class="browser-dot red"></span>
+              <span class="browser-dot amber"></span>
+              <span class="browser-dot green"></span>
             </div>
-            <div class="timeline">
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                  <span class="timeline-year">Foundation</span>
-                  <span class="timeline-desc">Core IT &amp; support capabilities</span>
-                </div>
+
+            <div class="browser-content">
+              <div class="browser-sidebar">
+                <div class="sidebar-label">Services</div>
+                <div class="sidebar-item active">Web Design</div>
+                <div class="sidebar-item">Support</div>
+                <div class="sidebar-item">Automation</div>
+                <div class="sidebar-item">Linux</div>
               </div>
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                  <span class="timeline-year">Expansion</span>
-                  <span class="timeline-desc">Web development &amp; networking</span>
+
+              <div class="browser-main">
+                <div class="panel-header-row">
+                  <div class="panel-badge">Zyphera</div>
+                  <div class="panel-pill">Online Presence</div>
                 </div>
-              </div>
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                  <span class="timeline-year">Security</span>
-                  <span class="timeline-desc">Cybersecurity &amp; hardening</span>
+
+                <div class="feature-row">
+                  <div class="feature-card large">
+                    <span>Business Website</span>
+                    <strong>Modern, clear, responsive</strong>
+                  </div>
+                  <div class="feature-card small">
+                    <span>Support</span>
+                    <strong>Issue resolved</strong>
+                  </div>
                 </div>
-              </div>
-              <div class="timeline-item">
-                <div class="timeline-dot active"></div>
-                <div class="timeline-content">
-                  <span class="timeline-year">Today</span>
-                  <span class="timeline-desc">Full-stack digital solutions</span>
+
+                <div class="metrics-row">
+                  <div class="mini-stat">
+                    <label>Delivery</label>
+                    <strong>Clear</strong>
+                  </div>
+                  <div class="mini-stat">
+                    <label>Scope</label>
+                    <strong>Defined</strong>
+                  </div>
+                  <div class="mini-stat accent">
+                    <label>Status</label>
+                    <strong>Ready</strong>
+                  </div>
                 </div>
               </div>
             </div>
@@ -213,311 +143,415 @@
       </div>
     </section>
 
-    <!-- Services -->
+    <section class="intro section light-section" id="about-intro">
+      <div class="container intro-grid">
+        <div class="intro-copy fade-in">
+          <span class="section-label">ABOUT ZYPHERA DIGITAL</span>
+          <h2 class="section-title dark">Technology Services Focused on Practical Outcomes.</h2>
+          <p class="section-text dark">Zyphera Digital focuses on practical digital solutions, from developing professional websites to assisting with common software and operating system issues. Each project begins with understanding the requirement and selecting an appropriate approach.</p>
+        </div>
+
+        <div class="intro-visual fade-in delay-1">
+          <div class="studio-panel">
+            <div class="studio-topline">
+              <span>Consultation</span>
+              <span class="studio-status">Live</span>
+            </div>
+
+            <div class="studio-stack">
+              <div class="studio-item">
+                <span class="studio-item-label">Brief</span>
+                <strong>Clarify objectives</strong>
+              </div>
+              <div class="studio-item">
+                <span class="studio-item-label">Delivery</span>
+                <strong>Solution design</strong>
+              </div>
+              <div class="studio-item">
+                <span class="studio-item-label">Support</span>
+                <strong>Practical assistance</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="services section" id="services">
       <div class="container">
         <div class="section-header fade-in">
-          <span class="section-label">Services</span>
-          <h2 class="section-title">What We Provide</h2>
+          <span class="section-label">OUR SERVICES</span>
+          <h2 class="section-title">Practical Services for Digital and Technical Needs.</h2>
+          <p class="section-subtitle">Focused solutions for businesses and individuals who need a professional online presence or assistance with everyday technical challenges.</p>
         </div>
-        <div class="services-grid">
 
+        <div class="services-grid">
           <article class="service-card glass-card fade-in">
+            <div class="service-number">01</div>
             <div class="service-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 8h2M7 12h4"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 8h2M7 12h4"/></svg>
             </div>
-            <h3 class="service-title">IT Support</h3>
-            <p class="service-desc">Technical troubleshooting, system configuration and user support.</p>
-            <div class="service-tags">
-              <span class="tag">Windows</span>
-              <span class="tag">Linux</span>
-              <span class="tag">Troubleshooting</span>
-            </div>
-            <a href="#contact" class="service-link">
-              Learn more <span class="arrow">&rarr;</span>
-            </a>
+            <h3 class="service-title">Web Development</h3>
+            <p class="service-desc">Professional, responsive websites designed to present your business clearly and establish a credible online presence.</p>
+            <ul class="service-list">
+              <li>Business websites</li>
+              <li>Landing pages</li>
+              <li>Website redesigns</li>
+              <li>Responsive layouts</li>
+            </ul>
+            <a href="#contact" class="service-link" data-service="Web Development">Explore Web Development <span class="arrow">→</span></a>
           </article>
 
           <article class="service-card glass-card fade-in delay-1">
+            <div class="service-number">02</div>
             <div class="service-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
             </div>
-            <h3 class="service-title">Web Development</h3>
-            <p class="service-desc">Modern responsive websites and digital experiences.</p>
-            <div class="service-tags">
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-              <span class="tag">JavaScript</span>
-            </div>
-            <a href="#contact" class="service-link">
-              Learn more <span class="arrow">&rarr;</span>
-            </a>
+            <h3 class="service-title">IT Troubleshooting</h3>
+            <p class="service-desc">Practical assistance with common computer, software, and operating system issues.</p>
+            <ul class="service-list">
+              <li>Windows troubleshooting</li>
+              <li>Software installation</li>
+              <li>Basic diagnostics</li>
+              <li>Performance checks</li>
+            </ul>
+            <a href="#contact" class="service-link" data-service="IT Troubleshooting">Explore IT Support <span class="arrow">→</span></a>
           </article>
 
           <article class="service-card glass-card fade-in delay-2">
+            <div class="service-number">03</div>
             <div class="service-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M8 4h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"/><path d="M9 8h6M9 12h6"/></svg>
             </div>
-            <h3 class="service-title">Cybersecurity</h3>
-            <p class="service-desc">Security-focused testing, assessment and system hardening.</p>
-            <div class="service-tags">
-              <span class="tag">Security Testing</span>
-              <span class="tag">Nmap</span>
-              <span class="tag">Wireshark</span>
-            </div>
-            <a href="#contact" class="service-link">
-              Learn more <span class="arrow">&rarr;</span>
-            </a>
+            <h3 class="service-title">Python Scripting</h3>
+            <p class="service-desc">Small, purpose-built scripts to simplify repetitive tasks and support everyday workflows.</p>
+            <ul class="service-list">
+              <li>File organisation</li>
+              <li>Basic automation</li>
+              <li>Text and CSV processing</li>
+              <li>Data conversion</li>
+            </ul>
+            <a href="#contact" class="service-link" data-service="Python Scripting">Explore Python Scripting <span class="arrow">→</span></a>
           </article>
 
           <article class="service-card glass-card fade-in delay-3">
+            <div class="service-number">04</div>
             <div class="service-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M7 6h10M5 8l7 8M19 8l-7 8"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m9 18 3 3 9-9"/><path d="M3 12.5V7a2 2 0 0 1 2-2h3l2-2h4l2 2h3a2 2 0 0 1 2 2v9.5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg>
             </div>
-            <h3 class="service-title">Networking</h3>
-            <p class="service-desc">Network configuration, troubleshooting and infrastructure support.</p>
-            <div class="service-tags">
-              <span class="tag">Cisco</span>
-              <span class="tag">Networking</span>
-              <span class="tag">Packet Tracer</span>
-            </div>
-            <a href="#contact" class="service-link">
-              Learn more <span class="arrow">&rarr;</span>
-            </a>
+            <h3 class="service-title">Linux Support</h3>
+            <p class="service-desc">Assistance with Linux installation, basic configuration, command-line operations, and common system issues.</p>
+            <ul class="service-list">
+              <li>Installation guidance</li>
+              <li>Package management</li>
+              <li>CLI assistance</li>
+              <li>Virtual machine setup</li>
+            </ul>
+            <a href="#contact" class="service-link" data-service="Linux Support">Explore Linux Support <span class="arrow">→</span></a>
           </article>
-
         </div>
       </div>
     </section>
 
-    <!-- Projects -->
+    <section class="value-proposition section light-section" id="approach">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">OUR APPROACH</span>
+          <h2 class="section-title dark">Clear Requirements. Thoughtful Implementation.</h2>
+        </div>
+
+        <div class="value-grid">
+          <article class="value-card fade-in">
+            <div class="value-icon">01</div>
+            <h3>Practical by Design</h3>
+            <p>Focus on the actual problem and choose a solution appropriate to the requirements.</p>
+          </article>
+
+          <article class="value-card fade-in delay-1">
+            <div class="value-icon">02</div>
+            <h3>Clear Communication</h3>
+            <p>Establish a clear understanding of project scope, expected deliverables, and relevant technical considerations.</p>
+          </article>
+
+          <article class="value-card fade-in delay-2">
+            <div class="value-icon">03</div>
+            <h3>Attention to Detail</h3>
+            <p>Prioritise usability, maintainability, and careful implementation across each deliverable.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="projects section" id="projects">
       <div class="container">
         <div class="section-header fade-in">
-          <span class="section-label">Projects</span>
-          <h2 class="section-title">Technology Lab</h2>
-          <p class="section-subtitle">Operational environments and active development systems.</p>
+          <span class="section-label">SELECTED WORK</span>
+          <h2 class="section-title">Selected Projects and Practical Implementations.</h2>
+          <p class="section-subtitle">Explore examples of website development, programming, and practical IT problem-solving.</p>
         </div>
-        <div class="projects-grid">
 
-          <article class="project-panel glass-card fade-in">
+        <div class="projects-grid">
+          <article class="project-panel glass-card fade-in project-card" data-project="mahto">
             <div class="panel-header">
-              <span class="panel-status active-status"><span class="status-dot pulse"></span> ACTIVE</span>
-              <span class="panel-id">LAB-001</span>
+              <span class="panel-status completed-status">Concept</span>
+              <span class="panel-id">Project 01</span>
+            </div>
+            <h3 class="panel-title">Mahto Group Website Redesign</h3>
+            <div class="project-preview preview-mahto"></div>
+            <div class="panel-meta">
+              <div class="meta-row"><span class="meta-label">Category</span><span class="meta-value">Corporate Website Design</span></div>
+              <div class="meta-row"><span class="meta-label">Stack</span><span class="meta-value">HTML / CSS / JS</span></div>
+            </div>
+            <button class="panel-link" type="button">View Project <span class="arrow">→</span></button>
+          </article>
+
+          <article class="project-panel glass-card fade-in delay-1 project-card" data-project="zyphera-site">
+            <div class="panel-header">
+              <span class="panel-status active-status"><span class="status-dot pulse"></span> Active</span>
+              <span class="panel-id">Project 02</span>
+            </div>
+            <h3 class="panel-title">Zyphera Digital Website</h3>
+            <div class="project-preview preview-zyphera"></div>
+            <div class="panel-meta">
+              <div class="meta-row"><span class="meta-label">Category</span><span class="meta-value">Web Development</span></div>
+              <div class="meta-row"><span class="meta-label">Stack</span><span class="meta-value">HTML / CSS / JS</span></div>
+            </div>
+            <button class="panel-link" type="button">View Project <span class="arrow">→</span></button>
+          </article>
+
+          <article class="project-panel glass-card fade-in delay-2 project-card" data-project="python-utils">
+            <div class="panel-header">
+              <span class="panel-status completed-status">Experimental</span>
+              <span class="panel-id">Project 03</span>
+            </div>
+            <h3 class="panel-title">Python Utility Projects</h3>
+            <div class="project-preview preview-python"></div>
+            <div class="panel-meta">
+              <div class="meta-row"><span class="meta-label">Category</span><span class="meta-value">Python Scripting</span></div>
+              <div class="meta-row"><span class="meta-label">Stack</span><span class="meta-value">Python</span></div>
+            </div>
+            <button class="panel-link" type="button">View Project <span class="arrow">→</span></button>
+          </article>
+
+          <article class="project-panel glass-card fade-in delay-3 project-card" data-project="support-lab">
+            <div class="panel-header">
+              <span class="panel-status active-status"><span class="status-dot pulse"></span> Practice</span>
+              <span class="panel-id">Project 04</span>
             </div>
             <h3 class="panel-title">IT Support Simulation Lab</h3>
+            <div class="project-preview preview-support"></div>
             <div class="panel-meta">
-              <div class="meta-row"><span class="meta-label">CATEGORY</span><span class="meta-value">IT SUPPORT</span></div>
-              <div class="meta-row"><span class="meta-label">ENVIRONMENT</span><span class="meta-value">WINDOWS / LINUX</span></div>
+              <div class="meta-row"><span class="meta-label">Category</span><span class="meta-value">IT Troubleshooting</span></div>
+              <div class="meta-row"><span class="meta-label">Stack</span><span class="meta-value">Windows / Linux</span></div>
             </div>
-            <a href="#" class="panel-link">View Project <span class="arrow">&rarr;</span></a>
+            <button class="panel-link" type="button">View Project <span class="arrow">→</span></button>
           </article>
-
-          <article class="project-panel glass-card fade-in delay-1">
-            <div class="panel-header">
-              <span class="panel-status active-status"><span class="status-dot pulse"></span> ACTIVE</span>
-              <span class="panel-id">LAB-002</span>
-            </div>
-            <h3 class="panel-title">Networking Laboratory</h3>
-            <div class="panel-meta">
-              <div class="meta-row"><span class="meta-label">CATEGORY</span><span class="meta-value">NETWORKING</span></div>
-              <div class="meta-row"><span class="meta-label">ENVIRONMENT</span><span class="meta-value">CISCO / PACKET TRACER</span></div>
-            </div>
-            <a href="#" class="panel-link">View Project <span class="arrow">&rarr;</span></a>
-          </article>
-
-          <article class="project-panel glass-card fade-in delay-2">
-            <div class="panel-header">
-              <span class="panel-status active-status"><span class="status-dot pulse"></span> ACTIVE</span>
-              <span class="panel-id">LAB-003</span>
-            </div>
-            <h3 class="panel-title">Cybersecurity Home Lab</h3>
-            <div class="panel-meta">
-              <div class="meta-row"><span class="meta-label">CATEGORY</span><span class="meta-value">CYBERSECURITY</span></div>
-              <div class="meta-row"><span class="meta-label">ENVIRONMENT</span><span class="meta-value">KALI / LINUX</span></div>
-            </div>
-            <a href="#" class="panel-link">View Project <span class="arrow">&rarr;</span></a>
-          </article>
-
-          <article class="project-panel glass-card fade-in">
-            <div class="panel-header">
-              <span class="panel-status completed-status">&#10003; COMPLETED</span>
-              <span class="panel-id">PRJ-004</span>
-            </div>
-            <h3 class="panel-title">Tea Haven Website</h3>
-            <div class="panel-meta">
-              <div class="meta-row"><span class="meta-label">CATEGORY</span><span class="meta-value">WEB DEVELOPMENT</span></div>
-              <div class="meta-row"><span class="meta-label">ENVIRONMENT</span><span class="meta-value">HTML / CSS / JS</span></div>
-            </div>
-            <a href="#" class="panel-link">View Project <span class="arrow">&rarr;</span></a>
-          </article>
-
-          <article class="project-panel glass-card fade-in delay-1">
-            <div class="panel-header">
-              <span class="panel-status dev-status"><span class="status-dot pulse"></span> DEVELOPMENT</span>
-              <span class="panel-id">PRJ-005</span>
-            </div>
-            <h3 class="panel-title">Nova AI Assistant</h3>
-            <div class="panel-meta">
-              <div class="meta-row"><span class="meta-label">CATEGORY</span><span class="meta-value">AI / PYTHON</span></div>
-              <div class="meta-row"><span class="meta-label">ENVIRONMENT</span><span class="meta-value">PYTHON / API</span></div>
-            </div>
-            <a href="#" class="panel-link">View Project <span class="arrow">&rarr;</span></a>
-          </article>
-
         </div>
       </div>
     </section>
 
-    <!-- Technology Stack -->
-    <section class="tech section" id="technology">
+    <section class="process section light-section" id="process">
       <div class="container">
         <div class="section-header fade-in">
-          <span class="section-label">Stack</span>
-          <h2 class="section-title">Technology</h2>
+          <span class="section-label">OUR PROCESS</span>
+          <h2 class="section-title dark">A Structured Approach to Every Project.</h2>
         </div>
-        <div class="tech-cloud fade-in" id="techCloud">
-          <span class="tech-pill">Windows</span>
-          <span class="tech-pill">Linux</span>
-          <span class="tech-pill">Cisco</span>
-          <span class="tech-pill">Python</span>
-          <span class="tech-pill">Git</span>
-          <span class="tech-pill">GitHub</span>
-          <span class="tech-pill">Nmap</span>
-          <span class="tech-pill">Wireshark</span>
-          <span class="tech-pill">Burp Suite</span>
-          <span class="tech-pill">HTML</span>
-          <span class="tech-pill">CSS</span>
-          <span class="tech-pill">JavaScript</span>
-          <span class="tech-pill">VirtualBox</span>
-          <span class="tech-pill">VMware</span>
+
+        <div class="timeline-process">
+          <div class="process-step fade-in">
+            <span class="step-number">01</span>
+            <h3>Enquiry</h3>
+            <p>Understand the client's requirements and objectives.</p>
+          </div>
+          <div class="process-step fade-in delay-1">
+            <span class="step-number">02</span>
+            <h3>Planning</h3>
+            <p>Establish the scope, deliverables, and proposed approach.</p>
+          </div>
+          <div class="process-step fade-in delay-2">
+            <span class="step-number">03</span>
+            <h3>Implementation</h3>
+            <p>Complete the agreed development or troubleshooting work.</p>
+          </div>
+          <div class="process-step fade-in delay-3">
+            <span class="step-number">04</span>
+            <h3>Delivery</h3>
+            <p>Review the result, address agreed adjustments, and deliver the completed work.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div class="about-content fade-in">
+          <span class="section-label">ABOUT THE BUSINESS</span>
+          <h2 class="section-title">A Focused Approach to Digital Services.</h2>
+          <p class="section-text">Zyphera Digital is an independent technology services business focused on web development, IT troubleshooting, Python scripting, and Linux support.</p>
+          <p class="section-text">The business aims to provide practical solutions that address real requirements without unnecessary complexity. Through careful implementation, clear communication, and continuous technical development, Zyphera Digital seeks to deliver useful and maintainable results for its clients.</p>
+        </div>
+
+        <div class="about-visual fade-in delay-1">
+          <div class="workbench-panel">
+            <div class="workbench-top">
+              <span>Workspace</span>
+              <span>Active</span>
+            </div>
+            <div class="workbench-body">
+              <div class="workbench-window">
+                <div class="window-header">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="window-content">
+                  <div class="content-lines"><span></span><span></span><span></span></div>
+                  <div class="content-tiles">
+                    <div></div><div></div><div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="contact section" id="contact">
       <div class="container">
-
         <div class="contact-header fade-in">
-          <span class="section-label">Secure Channel</span>
-          <h2 class="section-title">Connect With Me</h2>
-          <p class="section-subtitle">
-            Establish a connection through one of the available communication channels.
-          </p>
+          <span class="section-label">GET IN TOUCH</span>
+          <h2 class="section-title">Discuss Your Project or Technical Requirements.</h2>
+          <p class="section-subtitle">Share a brief description of your website project or technical issue, and we can discuss an appropriate next step.</p>
         </div>
 
         <div class="contact-grid">
+          <aside class="contact-intro glass-card fade-in">
+            <span class="section-label">Service areas</span>
+            <h3>Practical support for digital and technical work.</h3>
+            <ul>
+              <li>Web Development</li>
+              <li>IT Troubleshooting</li>
+              <li>Python Scripting</li>
+              <li>Linux Support</li>
+            </ul>
+          </aside>
 
-          <!-- Email -->
-          <a href="mailto:your-email@example.com"
-            class="contact-card glass-card fade-in">
+          <div class="contact-form-card glass-card fade-in delay-1">
+            <form id="contact-form" class="contact-form" name="zyphera-contact" method="POST" action="/.netlify/functions/contact" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="zyphera-contact" />
+              <p class="hidden-field">
+                <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+              </p>
 
-            <div class="contact-icon">
-              <svg viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="1.5">
-                <rect x="3" y="5" width="18" height="14" rx="2"/>
-                <path d="m3 7 9 6 9-6"/>
-              </svg>
-            </div>
+              <div class="form-row">
+                <label>
+                  <span>Full name <span class="required-indicator">*</span></span>
+                  <input type="text" name="name" id="name" placeholder="Your full name" required aria-required="true" aria-describedby="form-status">
+                </label>
+                <label>
+                  <span>Email address <span class="required-indicator">*</span></span>
+                  <input type="email" name="email" id="email" placeholder="name@example.com" required aria-required="true" aria-describedby="form-status">
+                </label>
+              </div>
 
-            <div class="contact-content">
-              <span class="contact-label">EMAIL</span>
-              <h3>Send an Email</h3>
-              <p>your-email@example.com</p>
-            </div>
+              <div class="form-row">
+                <label>
+                  <span>Service required <span class="required-indicator">*</span></span>
+                  <select name="service" id="service" required aria-required="true" aria-describedby="form-status">
+                    <option value="">Select a service</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="IT Troubleshooting">IT Troubleshooting</option>
+                    <option value="Python Scripting">Python Scripting</option>
+                    <option value="Linux Support">Linux Support</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </label>
+                <label>
+                  <span>Business name</span>
+                  <input type="text" name="businessName" id="businessName" placeholder="Your business or organisation">
+                </label>
+              </div>
 
-            <span class="contact-arrow">&rarr;</span>
-          </a>
+              <div class="form-row">
+                <label>
+                  <span>Project budget</span>
+                  <select name="budget" id="budget">
+                    <option value="">Select a budget range</option>
+                    <option value="Under $1,000">Under $1,000</option>
+                    <option value="$1,000 – $3,000">$1,000 – $3,000</option>
+                    <option value="$3,000 – $6,000">$3,000 – $6,000</option>
+                    <option value="$6,000 – $10,000">$6,000 – $10,000</option>
+                    <option value="$10,000+">$10,000+</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                  </select>
+                </label>
+                <div class="form-note">
+                  <span>How we use your information</span>
+                  <p>We use the details you provide to understand your enquiry, discuss the appropriate next step, and respond to your request. We do not share your information with third parties for marketing purposes.</p>
+                </div>
+              </div>
 
+              <label>
+                <span>Project or issue description <span class="required-indicator">*</span></span>
+                <textarea name="message" id="message" rows="5" placeholder="Please tell us about your project or technical issue" required aria-required="true" aria-describedby="form-status"></textarea>
+              </label>
 
-          <!-- WhatsApp -->
-          <a href="https://wa.me/YOURNUMBER"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="contact-card glass-card fade-in delay-1">
-
-            <div class="contact-icon">
-              <svg viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="1.5">
-                <path d="M21 11.5a8.5 8.5 0 0 1-12.9 7.3L3 20l1.2-4.8A8.5 8.5 0 1 1 21 11.5z"/>
-                <path d="M8.5 8.5c.3-.7.6-.7 1-.7h.4c.2 0 .4.1.5.4l.7 1.7c.1.2.1.4-.1.6l-.6.7c.6 1.1 1.5 2 2.6 2.6l.7-.6c.2-.2.4-.2.6-.1l1.7.7c.3.1.4.3.4.5v.4c0 .4 0 .7-.7 1-.6.3-1.3.4-2 .2-1.2-.3-2.5-1.1-3.7-2.3-1.2-1.2-2-2.5-2.3-3.7-.2-.7-.1-1.4.2-2z"/>
-              </svg>
-            </div>
-
-            <div class="contact-content">
-              <span class="contact-label">WHATSAPP</span>
-              <h3>Message Me</h3>
-              <p>Available for direct communication</p>
-            </div>
-
-            <span class="contact-arrow">&rarr;</span>
-          </a>
-
-
-          <!-- LinkedIn -->
-          <a href="YOUR_LINKEDIN_URL"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="contact-card glass-card fade-in delay-2">
-
-            <div class="contact-icon">
-              <span class="contact-text-icon">in</span>
-            </div>
-
-            <div class="contact-content">
-              <span class="contact-label">LINKEDIN</span>
-              <h3>Professional Network</h3>
-              <p>Connect with me professionally</p>
-            </div>
-
-            <span class="contact-arrow">&rarr;</span>
-          </a>
-
-
-          <!-- GitHub -->
-          <a href="YOUR_GITHUB_URL"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="contact-card glass-card fade-in delay-3">
-
-            <div class="contact-icon">
-              <svg viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="1.5">
-                <path d="M9 19c-4 .9-4-2-5-2m10 4v-3.9c0-.9.1-1.2-.5-1.7 1.8-.2 3.7-.9 3.7-4 0-.9-.3-1.6-.8-2.2.1-.2.4-1.1-.1-2.2 0 0-.7-.2-2.3.8a8 8 0 0 0-4.2 0C8.2 4.8 7.5 5 7.5 5c-.5 1.1-.2 2-.1 2.2-.5.6-.8 1.3-.8 2.2 0 3.1 1.9 3.8 3.7 4-.2.2-.3.6-.4 1.1-.4.2-1.4.5-2.4-.7"/>
-              </svg>
-            </div>
-
-            <div class="contact-content">
-              <span class="contact-label">GITHUB</span>
-              <h3>View My Work</h3>
-              <p>Projects, labs and technical documentation</p>
-            </div>
-
-            <span class="contact-arrow">&rarr;</span>
-          </a>
-
+              <button type="submit" class="btn btn-primary btn-submit">Submit Enquiry</button>
+              <p id="form-status" class="form-status" aria-live="polite"></p>
+            </form>
+          </div>
         </div>
-
       </div>
     </section>
-
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container footer-container">
-      <span class="footer-logo">ZYPHERA DIGITAL</span>
-      <span class="footer-copy">&copy; 2026 Zyphera Digital. All rights reserved.</span>
-      <nav class="footer-nav">
+      <div>
+        <div class="logo footer-logo" aria-label="Zyphera Digital">
+          <span class="logo-mark"><span></span></span>
+          <span>ZYPHERA DIGITAL</span>
+        </div>
+        <p class="footer-copy">Practical Technology. Thoughtful Solutions.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
         <a href="#home">Home</a>
-        <a href="#about">About</a>
         <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
+        <a href="#projects">Our Work</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
+
+      <div class="footer-meta">
+        <span>Web Development</span>
+        <span>IT Troubleshooting</span>
+        <span>Python Scripting</span>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© <span id="currentYear"></span> Zyphera Digital.</span>
     </div>
   </footer>
+
+  <div class="project-modal" id="projectModal" aria-hidden="true">
+    <div class="project-modal-backdrop" data-close="true"></div>
+    <div class="project-modal-panel" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+      <button class="project-modal-close" type="button" aria-label="Close project details">×</button>
+      <div class="project-modal-content">
+        <div class="project-modal-visual" id="projectModalVisual"></div>
+        <div class="project-modal-body">
+          <span class="project-modal-label" id="projectModalCategory">Project</span>
+          <h3 id="projectModalTitle">Project title</h3>
+          <p id="projectModalDescription">Project description.</p>
+          <ul id="projectModalList"></ul>
+          <div class="project-modal-meta">
+            <span id="projectModalStack"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

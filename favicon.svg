@@ -1,0 +1,6 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Zyphera Digital logo">
+  <rect width="128" height="128" rx="20" fill="#07101f"/>
+  <path d="M33 92V36h24.5c12.8 0 21.9 7.8 21.9 18.6 0 11-8.5 18.9-21.5 18.9H45V92H33Zm12-22.5h10.7c6.1 0 10.3-3.6 10.3-9.5s-4.2-9.5-10.3-9.5H45v19Z" fill="#67e8f9"/>
+  <path d="M73 92V36h13.7v30.1l19.4-30.1H120v56h-13.4V62.4L75.9 92H73Z" fill="#ecfeff"/>
+  <circle cx="100" cy="31" r="8" fill="#22d3ee"/>
+</svg>

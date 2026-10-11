@@ -1,67 +1,52 @@
-# Zyphera Digital
+﻿# Zyphera Digital
 
-A modern business website for **Zyphera Digital**, a digital technology brand focused on web development, IT support, networking, and cybersecurity.
+A lightweight static website for Zyphera Digital, built with plain HTML, CSS, and JavaScript.
 
-## 🌐 About
+## Local development
 
-Zyphera Digital is a technology-focused brand built around providing digital solutions and technical services. This website serves as an online presence to showcase services, establish brand identity, and connect with potential clients.
+1. Open the project folder in a browser, or run a local static server:
+   `python -m http.server 8000`
+2. Visit `http://localhost:8000` in your browser.
 
-## 🛠️ Services
+## Backend and contact delivery
 
-* **Web Development** — Modern, responsive, and user-friendly websites.
-* **IT Support** — Technical troubleshooting, computer maintenance, and system support.
-* **Networking** — Network setup, configuration, and troubleshooting.
-* **Cybersecurity** — Security-focused solutions and technical assistance.
+This project remains a static frontend, but it now includes a Netlify Functions backend for server-side contact processing.
 
-## 💻 Technologies
+- Contact submissions are posted to `/.netlify/functions/contact`.
+- The function validates the request server-side and rejects missing or malformed data.
+- It supports a lightweight rate limit and server-side security checks.
+- It attempts to deliver valid submissions through the Netlify Forms API when `NETLIFY_SITE_ID` and `NETLIFY_PERSONAL_ACCESS_TOKEN` are configured.
+- If those environment variables are not configured, the function returns a clear error instead of falsely reporting success.
 
-* HTML5
-* CSS3
-* JavaScript
+## Required environment variables
 
-## ✨ Features
+Copy `.env.example` and populate the values in Netlify Environment Variables:
 
-* Modern and professional user interface.
-* Responsive design for desktop and mobile devices.
-* Service showcase and business information.
-* Brand-focused visual design.
-* User-friendly navigation.
+- `NETLIFY_SITE_ID`
+- `NETLIFY_PERSONAL_ACCESS_TOKEN`
+- `NETLIFY_FORM_NAME` (optional; defaults to `zyphera-contact`)
+- `ALLOWED_ORIGIN` (optional; set to your production domain for CORS)
 
-## 📂 Project Structure
+Do not commit real secret values to the repository.
 
-```text
-Zyphera-Digital/
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-```
+## Local testing
 
-*The structure above is a suggested layout; adjust it to match the actual repository.*
+1. Run a local static server from the project root: `python -m http.server 8000`
+2. Submit the form in the browser.
+3. For deterministic server-side validation tests, run: `node --test netlify/functions/contact.test.js`
 
-## 🚀 Getting Started
+## Deployment
 
-1. Clone the repository:
+This site is suitable for static hosting on Netlify or similar providers.
 
-   ```bash
-   git clone https://github.com/No1r912/Business-Website.git
-   ```
+- Ensure `favicon.svg` is included in the site root.
+- Keep the contact form configured with `data-netlify="true"` and a hidden honeypot field for Netlify detection.
+- Add the environment variables in Netlify before testing a real submission.
+- The `thank-you.html` page remains as a success destination once the form has been accepted by the backend.
 
-2. Navigate to the project directory:
+## Project structure
 
-   ```bash
-   cd REPOSITORY-NAME
-   ```
-
-3. Open `index.html` in your browser or use a local development server.
-
-## 📬 Contact
-
-For business inquiries, technical support, or collaboration opportunities, use the contact information provided on the website.
-
----
-
-<p align="center">
-  <b>Zyphera Digital</b><br>
-  <i>Digital solutions. Technical excellence.</i>
-</p>
+- `index.html` — page structure and content
+- `script.js` — navigation, reveals, and form validation
+- `css/` — styling files
+- `favicon.svg` — site icon
